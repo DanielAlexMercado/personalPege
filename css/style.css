@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 #inicio{
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('images/fondo-inicio.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('.assets/fondo2.jpg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -90,7 +90,7 @@ html{
 #inicio .content .presentation .description{
     max-width: 700px;
     margin: 25px;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: center;
 }
 #inicio .content .presentation a{
@@ -101,7 +101,7 @@ html{
     border: 2px solid #fff;
     border-radius: 50px;
     color: #fff;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-transform: uppercase;
     transition: .5s;
     letter-spacing: 0.2rem;
@@ -112,4 +112,73 @@ html{
 #nav-icon{
     color: #fff;
     display: none;
+}
+
+/* seccion sobre mi */
+
+#aboutme{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#aboutme .picture-container{
+    max-width: 400px;
+    margin-right: 80px;
+}
+#aboutme .picture-container img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #f3f3f3;
+}
+#aboutme .aboutme{
+    margin: 0 40px;
+}
+#aboutme .aboutme .section-title{
+    font-size: 3.2rem;
+    text-decoration: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: .5rem;
+}
+#aboutme .aboutme h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: .2rem;
+}
+#aboutme .aboutme h2 span{
+    color: #197abe;
+}
+#aboutme .aboutme h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: .15rem;
+
+}
+#aboutme .aboutme p{
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    color: #565656;
+    margin-bottom: 12px;
+}
+#aboutme .aboutme a{
+    display: inline-block;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+#aboutme .aboutme a:hover{
+    background-color: #197abe;
+    color: #fff;
 }
