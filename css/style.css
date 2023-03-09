@@ -203,7 +203,7 @@ html{
 
 .skills-container{
     /* background: linear-gradient(#197abe, rgba(33, 16, 16, 0.40)), url('#fondo-skills.jpg'); */
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('/assets/images/fondo-skills.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('/assets/images/fondo-skills1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,3 +313,66 @@ html{
     }
 }
 /* seccion de poryectos */
+#portfolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+#portfolio .title-section{
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#portfolio .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+#portfolio .row .project{
+    max-width: 450px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .row .project img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.5s;
+}
+#portfolio .row .project:hover img{
+    filter: grayscale(0);
+}
+#portfolio .row .project .info{
+    /* font-size: 1.4rem; */
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+    /* color: #197abe; */
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: 0.5s;
+}
+#portfolio .row .project .info h4{
+    font-size: 1.8rem;
+    color: #197abe;
+    letter-spacing: .1rem;
+}
+#portfolio .row .project .info p{
+    font-size: 1.4rem;
+    color: white;
+}
+#portfolio .row .project:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
