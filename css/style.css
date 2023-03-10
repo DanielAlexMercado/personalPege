@@ -67,7 +67,7 @@ html{
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    filter: opacity(80%);
+    filter: opacity(50%);
     transition: 0.5s;
 }
 #inicio .content header .content-header .networks .linkedin{
@@ -78,13 +78,13 @@ html{
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
-    filter: opacity(80%);
+    filter: opacity(50%);
     transition: 0.3s;
 }
 #inicio .content header .content-header .networks span:hover{
     color: #3391f5;
-    filter: opacity(1);
-    transform: scale(1.5);
+    filter: opacity(100%);
+    transform: scale(1.4);
 }
 #inicio .content .presentation{
     font-size: 1.6rem;
@@ -396,4 +396,91 @@ html{
 #portfolio .row .project:hover .info{
     opacity: 1;
     bottom: 0;
+}
+
+/* seccion contaco */
+
+#contact{
+    padding: 65px 15px;
+}
+#contact .title-section{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#contact .form-container{
+    max-width: 1100px;
+    margin: auto;
+}
+#contact .form-container .middle-row{
+    display: flex;
+    justify-content: space-between;
+}
+#contact .form-container .row{
+    margin-bottom: 20px;
+}
+#contact .form-container input,
+#contact .form-container textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contact .form-container .middle-row input{
+    width: 48%;
+    margin-bottom: 20px;
+}
+#contact .form-container .full-input{
+    width: 100%;
+}
+.btn-send{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+}
+#contact .btn-send:hover{
+    background-color: #3391f5;
+    color: #fff;
+    border: none;
+}
+footer{
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer .networks .github{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 15px;
+    background-image: url('/assets/icons/github-icon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+footer .networks .linkedin{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 15px;
+    background-image: url('/assets/icons/linkedin-icon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
 }
