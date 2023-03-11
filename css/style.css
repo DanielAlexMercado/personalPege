@@ -1,3 +1,23 @@
+/* 
+    >>> CONVENCION DE OREN DE ESTILOS <<<
+
+1.-POSICIONAMIENTO => (position fix, relative, display flex, grid etc, todo aquello que ayuda a posicionar en el 
+    layout directamente el elemento.
+2.-MODELO DE CAJA (Box model => margin, padding, width, height, aquello que ayuda a para dar dimension)
+3.-TIPOGRAFÍA (tipo de fuentes, tamaño de fuentes)
+4.-TEMAS VISUALES (shadow-box, border-radius) el tipo de cosas más efectos visuales que hacen que los estilos 
+    y componentes se vean mas atractivos.
+5.-MISCELANEOS / OTROS 
+*/
+
+:root{
+    /* COLORES */
+    --principal-blue: #3391f5;
+    --soft-white: #fff;
+    --dark-blue: #0d0d5f; /* 0d0d5f 111135 */
+    --gray: #565656;
+    --clear-gray: #919191;
+ }
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,40 +28,33 @@ html{
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
 }
-#inicio{
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
-#inicio .content header{
-    background-color: rgba(0, 0, 0, 0.80);
+
+/* HOME SECTION */
+
+.header{
     position: fixed;
-    width: 100%;
-    height: 12vh;
-    z-index: 100;
-    top: 0;
-}
-#inicio .content header .content-header{
-    max-width: 1100px;
-    margin: auto;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.80);
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 10px;
 }
-#inicio .content header .content-header .logo{
-    text-align: center;
-    color: #3391f5;
-    font-size: 2.4rem;
-    text-decoration: none;
+.header .logo img{
+    width: 148px;
+    height: 44px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
-#inicio .content header .content-header nav ul{
+.header .header-content nav ul{
     list-style: none;
     display: flex;
     align-items: center; 
 }
-#inicio .content header .content-header nav ul li a{
+.header .header-content nav ul li a{
     text-decoration: none;
     font-size: 1.6rem;
     color: #fff;
@@ -49,17 +62,17 @@ html{
     font-weight: 400;
     transition: 0.5s;
 }
-#inicio .content header .content-header nav ul li a:hover{
-    color: #3391f5;
+.header .header-content nav ul li a:hover{
+    color: var(--principal-blue);
 }
-#inicio .content header .content-header .networks{
+.header .header-content .networks{
     width: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
-#inicio .content header .content-header .networks .github{
+.header .header-content .networks .github{
     display: inline-block;
     background-image: url('/assets/icons/github-icon.svg');
     background-size: cover;
@@ -70,7 +83,7 @@ html{
     filter: opacity(50%);
     transition: 0.5s;
 }
-#inicio .content header .content-header .networks .linkedin{
+.header .header-content .networks .linkedin{
     display: inline-block;
     background-image: url('/assets/icons/linkedin-icon.svg');
     background-size: cover;
@@ -81,15 +94,23 @@ html{
     filter: opacity(50%);
     transition: 0.3s;
 }
-#inicio .content header .content-header .networks span:hover{
-    color: #3391f5;
+.header .header-content .networks span:hover{
+    color: var(--principal-blue);
     filter: opacity(100%);
     transform: scale(1.4);
 }
-#inicio .content .presentation{
-    font-size: 1.6rem;
+
+/* WELCOME SECTION */
+
+#welcome{
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
+    background-size: cover;
+    background-position: center center;
+}
+#welcome .presentation{
+    font-size: 1.5rem;
     max-width: 1100px;
-    height: 100vh;
+    max-height: auto;
     margin: auto;
     padding-top: 100px;
     color: #fff;
@@ -98,29 +119,31 @@ html{
     align-items: center;
     justify-content: center;
 }
-#inicio .content .presentation .welcome{
+#welcome .presentation{
     font-size: 1.6rem;
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
     /* font-size: 2.2rem; */
 }
-#inicio .content .presentation h2{
-    font-size: 4.5rem;
+#welcome .presentation h2 span{
+    width:50%;
+    font-size: 4.0rem;
+    text-align: left;
+    color: var(--principal-blue);
+}
+#welcome .presentation h2{
+    font-size: 1.6rem;
     margin-bottom: 25px;
     text-align: center;
 }
-#inicio .content .presentation h2 span{
-    font-size: 4.7rem;
-    color: #3391f5;
-}
-#inicio .content .presentation .description{
+#welcome .presentation .description{
     max-width: 700px;
     margin: 25px;
-    font-size: 1.9rem;
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: justify;
 }
-#inicio .content .presentation a{
+#welcome .presentation a{
     text-decoration: none;
     display: inline-block;
     margin: 25px;
@@ -133,21 +156,21 @@ html{
     transition: .5s;
     letter-spacing: 0.2rem;
 }
-#inicio .content .presentation a:hover{
-    background-color: #3391f5;
+#welcome .presentation a:hover{
+    background-color: var(--principal-blue);
 }
 #nav-icon{
     color: #fff;
     display: none;
 }
 
-/* seccion sobre mi */
+/* ABOUT ME SECTION */
 
 #aboutme{
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
-    color: #111135;
+    color: var(--dark-blue);
     display: flex;
 }
 #aboutme .picture-container{
@@ -158,7 +181,7 @@ html{
     padding: 20px;
     width: 100%;
     border-radius: 50px;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3; 
 }
 #aboutme .aboutme{
     margin: 0 40px;
@@ -166,7 +189,7 @@ html{
 #aboutme .aboutme .section-title{
     font-size: 3.2rem;
     text-decoration: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: .5rem;
@@ -178,7 +201,7 @@ html{
     letter-spacing: .2rem;
 }
 #aboutme .aboutme h2 span{
-    color: #3391f5;
+    color: var(--principal-blue);
 }
 #aboutme .aboutme h3{
     font-size: 1.8rem;
@@ -191,7 +214,7 @@ html{
 #aboutme .aboutme p{
     font-size: 2.0rem;
     line-height: 2.5rem;
-    color: #565656;
+    color: var(--gray);
     margin-bottom: 12px;
 }
 #aboutme .aboutme a{
@@ -206,11 +229,11 @@ html{
     transition: .5s;
 }
 #aboutme .aboutme a:hover{
-    background-color: #3391f5;
+    background-color: var(--principal-blue);
     color: #fff;
 }
 
-/* seccion habilidades */
+/* SKILLS SECTION */
 
 .skills-container{
     /* background: linear-gradient(#197abe, rgba(33, 16, 16, 0.40)), url('#fondo-skills.jpg'); */
@@ -246,7 +269,7 @@ html{
 .skills-container .skill .bar{
     /* background-color: #c79543; */
     /* background-color: #ffc300; */
-    background-color: #919191;
+    background-color: var(--clear-gray);
     width: 100%;
     height: 10px;
     margin: 10px;
@@ -323,7 +346,9 @@ html{
         width: 40%;
     }
 }
-/* seccion de poryectos */
+
+/* PORTFOLIO SECTION */
+
 #portfolio{
     max-width: 1100px;
     padding: 100px 0;
@@ -333,7 +358,7 @@ html{
     text-align: center;
     font-size: 3.0rem;
     text-transform: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -358,7 +383,7 @@ html{
     transition: 0.5s;
 }
 #portfolio .row .project:hover{
-    box-shadow: 5px 5px 15px #565656, -5px -5px 15px #8a8a8a; 
+    box-shadow: 5px 5px 15px var(--clear-gray), -5px -5px 15px #8a8a8a; 
     transform: scale(1.1);
 }
 #portfolio .row .project img{
@@ -386,7 +411,7 @@ html{
 }
 #portfolio .row .project .info h4{
     font-size: 1.8rem;
-    color: #3391f5;
+    color: var(--principal-blue);
     letter-spacing: .1rem;
 }
 #portfolio .row .project .info p{
@@ -398,7 +423,7 @@ html{
     bottom: 0;
 }
 
-/* seccion contaco */
+/* CONTACT SECTION */
 
 #contact{
     padding: 100px 15px;
@@ -408,7 +433,7 @@ html{
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #111135;
+    color: var(--dark-blue);
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -429,7 +454,7 @@ html{
     padding: 20px;
     border-radius: 20px;
     border: none;
-    border: 1px solid #919191;
+    border: 1px solid var(--clear-gray);
 }
 #contact .form-container .middle-row input{
     width: 48%;
@@ -449,10 +474,13 @@ html{
     border: none;
 }
 #contact .btn-send:hover{
-    background-color: #3391f5;
+    background-color: var(--principal-blue);
     color: #fff;
     border: none;
 }
+
+/* FOOTER */
+
 footer{
     font-size: 2rem;
     background-color: #000;
