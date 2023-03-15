@@ -13,7 +13,7 @@
 :root{
     /* COLORES */
     --principal-blue: #3391f5;
-    --soft-white: #fff;
+    --white: #fff;
     --dark-blue: #0d0d5f; /* 0d0d5f 111135 */
     --gray: #565656;
     --clear-gray: #919191;
@@ -33,46 +33,83 @@ html{
 
 .header{
     position: fixed;
-    display: flex;
-    flex-direction: row;
+    top: 0;
+    left: 0; 
+    z-index: 100;
     width: 100%;
     min-width: 320px;
-    height: 15vh;
+    height: 60px;
+    /* padding-top: 10px; */
     background-color: rgba(0, 0, 0, 0.80);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
 }
-.header .logo img{
-    width: 148px;
-    height: 44px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-.header .header-content nav ul{
-    list-style: none;
+.header .nav{
     display: flex;
-    align-items: center; 
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 992px;
 }
-.header .header-content nav ul li a{
+.header .nav-link{
+    color: var(--white);
     text-decoration: none;
+}
+.header .links{
+    margin-top: 10px;
+    width: 70%;
+}
+.header .links .logo img{
+    height: 40px;
+    padding: 0 15px;
+}
+.header .links .fa-github{
+    position: relative;
+    bottom: 10px;
+    font-size: 3rem;
+    padding-right: 5px;
+    color: white;
+}
+.header .links .fa-linkedin{
+    position: relative;
+    bottom: 10px;
+    font-size: 3rem;
+    padding-left: 5px;
+    color: white;
+}
+.header .nav-menu{
+    /* display: none; */
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+    line-height: 60px;
+
+}
+.header .nav-menu-item{
     font-size: 1.6rem;
-    color: #fff;
-    margin: 0 12px;
-    font-weight: 400;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.header .nave-menu-link:hover{
+    background-color: var(--principal-blue );
     transition: 0.5s;
 }
-.header .header-content nav ul li a:hover{
-    color: var(--principal-blue);
+.header .nav .toggle{
+    display: none;
+    width: 20%;
+    color: var(--white);
+    background: none;
+    border: none;
+    font-size: 3rem;
+    padding: 0 5px;
+    line-height: 10px;
 }
-.header .header-content .networks{
+/* .header .header-content .networks{
     width: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-}
-.header .header-content .networks .github{
+} */
+/* .header .header-content .networks .github{
     display: inline-block;
     background-image: url('/assets/icons/github-icon.svg');
     background-size: cover;
@@ -98,52 +135,63 @@ html{
     color: var(--principal-blue);
     filter: opacity(100%);
     transform: scale(1.4);
-}
+} */
 
 /* WELCOME SECTION */
 
+main{
+    width: 100%;
+    padding: 70px auto;
+}
 #welcome{
     background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
     background-size: cover;
     background-position: center center;
 }
-#welcome .presentation{
-    font-size: 1.5rem;
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1100px;
     max-height: auto;
     margin: auto;
     padding-top: 100px;
+    font-size: 1.5rem;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
-#welcome .presentation{
+.presentation{
     font-size: 1.6rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     /* font-size: 2.2rem; */
 }
-#welcome .presentation h2 span{
+.presentation .welcome-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.presentation h2 span{
     width:50%;
     font-size: 4.0rem;
-    text-align: left;
+    line-height: 2.5rem;
+    text-align: center;
     color: var(--principal-blue);
 }
-#welcome .presentation h2{
+.presentation h2{
     font-size: 1.6rem;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: left;
 }
-#welcome .presentation .description{
+.presentation .description{
     max-width: 700px;
     margin: 25px;
     font-size: 1.2rem;
     text-align: justify;
 }
-#welcome .presentation a{
+.presentation a{
     text-decoration: none;
     display: inline-block;
     margin: 25px;
@@ -156,7 +204,7 @@ html{
     transition: .5s;
     letter-spacing: 0.2rem;
 }
-#welcome .presentation a:hover{
+.presentation a:hover{
     background-color: var(--principal-blue);
 }
 #nav-icon{

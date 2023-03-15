@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/142a09e693.css" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/142a09e693.js" crossorigin="anonymous"></script>
     <title>Mercado Daniel | Portafolio</title>
 </head>
 <body>
@@ -18,25 +18,26 @@
     <header id="home">
         <div class="header">
             <!-- <div class="header-content"> -->
-                <a href="#inicio" class="logo"><img src="/assets/images/logowhite.png" alt=""></a>
-                <nav id="nav" class="">
-                    <ul id="links">
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#aboutme">SOBRE MI</a></li>
-                        <li><a href="#skills">HABILIDADES</a></li>
-                        <li><a href="#portfolio">PORTAFOLIO</a></li>
-                        <li><a href="#contact">CONTACTO</a></li>
+                <nav class="nav">
+                    <div class="links">
+                        <a href="#home" class="logo"><img src="/assets/images/logowhite.png" alt=""></a>
+                        <a href="https://github.com/DanielAlexMercado" target="blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mercadodanielalejandro/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <button class="toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item"><a href="#home" class="nav-menu-link nav-link">INICIO</a></li>
+                        <li class="nav-menu-item"><a href="#aboutme" class="nav-menu-link nav-link">SOBRE MI</a></li>
+                        <li class="nav-menu-item"><a href="#skills" class="nav-menu-link nav-link">HABILIDADES</a></li>
+                        <li class="nav-menu-item"><a href="#portfolio" class="nav-menu-link nav-link">PORTAFOLIO</a></li>
+                        <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-link">CONTACTO</a></li>
                     </ul>
                 </nav>
                 <!-- iconos del menú responsive -->
-                <div id="nav-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                
                 <!-- social networks icons -->
-                <div class="networks">
-                    <a href="https://github.com/DanielAlexMercado" target="blank"><span class="github"></span></a>
-                    <a href="https://www.linkedin.com/in/mercadodanielalejandro/" target="blank"><span class="linkedin"></span></a>
-                </div>
             <!-- </div> -->
         </div>
     </header>
@@ -48,7 +49,9 @@
         <section id="welcome">
             <div class="presentation">
                 <!-- <p class="welcome">Bienvenidos</p> -->
-                <h2><span>Daniel Alejandro Mercado</span> | Desarrollador Web</h2>
+                <div class="welcome-title">
+                    <h2><span>Daniel Alejandro Mercado</span> | Desarrollador Web</h2>
+                </div>
                 <p class="description">Desarrollador autodidacta con 1 año de experiencia en HTML, CSS, Python, y básicos de JavaScript. Mi objetivo principal es aplicar el conocimiento adquirido y continuar con mi desarrollo profesional afinando mis habilidades y así evolucionar en el sector tecnológico del desarrollo web, tanto del lado del Frontend como del Backend. Estoy en constante crecimiento y búsqueda de retos, me apasiona trabajar en este sector y contribuir al desarrollo de proyectos increíbles que aporten valor y tengan impacto el mundo.</p>
                 <a href="#portfolio">Ir a Portafolio</a>
             </div>
@@ -144,7 +147,7 @@
                     <div class="overlay"></div>
                     <img src="/assets/images/img-mobileFirst.png" alt="proyecto 2">
                     <div class="info">
-                        <h4>Pagina de Gobierno</h4>
+                        <h4>Página de Gobierno</h4>
                         <p>Descripcion del proyecto</p>
                     </div>
                 </div>
@@ -152,7 +155,7 @@
                     <div class="overlay"></div>
                     <img src="/assets/images/img-mobileFirst.png" alt="proyecto 3">
                     <div class="info">
-                        <h4>Proyecto Django</h4>
+                        <h4>Página Asociación</h4>
                         <p>Descripcion del proyecto</p>
                     </div>
                 </div>
@@ -161,6 +164,22 @@
                     <img src="/assets/images/img-mobileFirst.png" alt="proyecto 4">
                     <div class="info">
                         <h4>Premios Platzi</h4>
+                        <p>Descripcion del proyecto</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="/assets/images/img-mobileFirst.png" alt="proyecto 6">
+                    <div class="info">
+                        <h4>Proyecto con Django</h4>
+                        <p>Descripcion del proyecto</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="/assets/images/img-mobileFirst.png" alt="proyecto 6">
+                    <div class="info">
+                        <h4>CRUD con Django Login</h4>
                         <p>Descripcion del proyecto</p>
                     </div>
                 </div>
