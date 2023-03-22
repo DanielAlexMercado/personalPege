@@ -25,7 +25,9 @@
 }
 html{
     font-size: 62.5%;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -103,103 +105,70 @@ html{
     padding: 0 5px;
     line-height: 10px;
 }
-/* .header .header-content .networks{
-    width: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-} */
-/* .header .header-content .networks .github{
-    display: inline-block;
-    background-image: url('/assets/icons/github-icon.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    filter: opacity(50%);
-    transition: 0.5s;
-}
-.header .header-content .networks .linkedin{
-    display: inline-block;
-    background-image: url('/assets/icons/linkedin-icon.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    filter: opacity(50%);
-    transition: 0.3s;
-}
-.header .header-content .networks span:hover{
-    color: var(--principal-blue);
-    filter: opacity(100%);
-    transform: scale(1.4);
-} */
-
 /* WELCOME SECTION */
 
 main{
     width: 100%;
-    padding: 70px auto;
-}
-#welcome{
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
-    background-size: cover;
-    background-position: center center;
+    min-width: 320px;
+    height: max-content;
+    padding: 20px auto;
 }
 .presentation{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
     max-height: auto;
     margin: auto;
     padding-top: 100px;
-    font-size: 1.5rem;
-    color: #fff;
-}
-.presentation{
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    /* font-size: 2.2rem; */
+    padding-bottom: 100px;
+    color: var(--white);
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
+    background-size: cover;
+    background-position: center center;
 }
 .presentation .welcome-title{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
+    height: auto;
     align-items: center;
     margin: 0 auto;
+    width: 100%;
+    height: max-content;
 }
-.presentation h2 span{
-    width:50%;
-    font-size: 4.0rem;
-    line-height: 2.5rem;
+.presentation .welcome-title h2{
+    margin: 5px auto;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 4.0rem;
     text-align: center;
     color: var(--principal-blue);
+    text-transform: uppercase;
 }
-.presentation h2{
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-    text-align: left;
+.presentation .welcome-title h3{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem; 
 }
 .presentation .description{
-    max-width: 700px;
+    width: 100%;
+    max-width: 800px;
     margin: 25px;
-    font-size: 1.2rem;
+    padding: 30px;
     text-align: justify;
+    font-size: 1.6rem;
 }
 .presentation a{
     text-decoration: none;
     display: inline-block;
-    margin: 25px;
+    margin: 35px;
     padding: 20px 25px;
     border: 2px solid #fff;
     border-radius: 50px;
     color: #fff;
-    /* font-weight: bold; */
+    font-size: 1.6rem;
     text-transform: uppercase;
     transition: .5s;
     letter-spacing: 0.2rem;
@@ -214,27 +183,39 @@ main{
 
 /* ABOUT ME SECTION */
 
-#aboutme{
-    max-width: 1100px;
-    margin: auto;
-    padding: 100px 15px;
-    color: var(--dark-blue);
+.aboutme-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 100px 15px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1100px;
+    height: auto;
+    color: var(--dark-blue);
 }
-#aboutme .picture-container{
+.aboutme-container .picture-container{
+    width: 270px;
+    height: 480px;
     max-width: 400px;
-    margin-right: 80px;
+    margin: 30px;
+    background-color: #0d0d5f;
 }
-#aboutme .picture-container img{
+.aboutme-container .picture-container img{
     padding: 20px;
     width: 100%;
     border-radius: 50px;
     background-color: #f3f3f3; 
 }
-#aboutme .aboutme{
-    margin: 0 40px;
+.aboutme-container .aboutme{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 40px;
+    width: 600px;
 }
-#aboutme .aboutme .section-title{
+.aboutme-container .aboutme .section-title{
     font-size: 3.2rem;
     text-decoration: uppercase;
     color: var(--dark-blue);
@@ -242,16 +223,16 @@ main{
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: .5rem;
 }
-#aboutme .aboutme h2{
+.aboutme-container .aboutme h2{
     font-size: 3.4rem;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: .2rem;
 }
-#aboutme .aboutme h2 span{
+.aboutme-container .aboutme h2 span{
     color: var(--principal-blue);
 }
-#aboutme .aboutme h3{
+.aboutme-container .aboutme h3{
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -259,24 +240,25 @@ main{
     letter-spacing: .15rem;
 
 }
-#aboutme .aboutme p{
-    font-size: 2.0rem;
+.aboutme-container .aboutme p{
+    font-size: 1.6rem;
+    text-align: justify;
     line-height: 2.5rem;
     color: var(--gray);
     margin-bottom: 12px;
 }
-#aboutme .aboutme a{
+.aboutme-container .aboutme a{
     display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
     font-size: 1.6rem;
     text-decoration: none;
     color: #000;
     border-radius: 30px;
-    padding: 10px 20px;
     border: 1px solid #000;
-    margin-top: 30px;
     transition: .5s;
 }
-#aboutme .aboutme a:hover{
+.aboutme-container .aboutme a:hover{
     background-color: var(--principal-blue);
     color: #fff;
 }
@@ -285,42 +267,50 @@ main{
 
 .skills-container{
     /* background: linear-gradient(#197abe, rgba(33, 16, 16, 0.40)), url('#fondo-skills.jpg'); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('/assets/images/fondo-skills1.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 100px 0;
-    text-align: center;
 }
-.skills-container h3{
+.skills-container .skills-title{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
     color: #fff;
     font-size: 3.0rem;
 }
 .skills-container .skill{
+    width: 100%;
+    min-width: 288px;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 25px auto;
 }
 .skills-container .skill .info{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-width: 320px;
     font-size: 1.9rem;
     color: #fff;
 }
-/* .skills-container .skill .list{
-    display: inline-block;
-    margin-right: 60px;
-    height: 10px;
-    width: 10px;
-    background-color: #fff;
-} */
 .skills-container .skill .bar{
     /* background-color: #c79543; */
     /* background-color: #ffc300; */
+    margin: 10px auto;
+    width: 85%;
+    min-width: 200px;
+    height: 15px;
     background-color: var(--clear-gray);
-    width: 100%;
-    height: 10px;
-    margin: 10px;
 }
 /* Este estilo aplicará mediante JavaScript para lograr la animación de la barra */
 .skill-container .skill .bar .bar-progress1{
@@ -422,7 +412,6 @@ main{
 }
 #portfolio .row .project{
     max-width: 500px;
-    /* border: 1px solid #000; */
     padding: 10px;
     margin: 30px 10px;
     border-radius: 8px;
@@ -446,11 +435,9 @@ main{
     filter: opacity(1) blur(0);
 }
 #portfolio .row .project .info{
-    /* font-size: 1.4rem; */
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, 0.80);
-    /* color: #197abe; */
     width: 100%;
     padding: 10px;
     opacity: 0;

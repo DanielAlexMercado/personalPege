@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/142a09e693.js" crossorigin="anonymous"></script>
     <title>Mercado Daniel | Portafolio</title>
 </head>
@@ -35,10 +47,7 @@
                         <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-link">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <!-- iconos del menú responsive -->
-                
-                <!-- social networks icons -->
-            <!-- </div> -->
+             
         </div>
     </header>
 
@@ -50,7 +59,8 @@
             <div class="presentation">
                 <!-- <p class="welcome">Bienvenidos</p> -->
                 <div class="welcome-title">
-                    <h2><span>Daniel Alejandro Mercado</span> | Desarrollador Web</h2>
+                    <h2>Daniel <span>Alejandro Mercado</span></h2>
+                    <h3>Desarrollador Web</h3>
                 </div>
                 <p class="description">Desarrollador autodidacta con 1 año de experiencia en HTML, CSS, Python, y básicos de JavaScript. Mi objetivo principal es aplicar el conocimiento adquirido y continuar con mi desarrollo profesional afinando mis habilidades y así evolucionar en el sector tecnológico del desarrollo web, tanto del lado del Frontend como del Backend. Estoy en constante crecimiento y búsqueda de retos, me apasiona trabajar en este sector y contribuir al desarrollo de proyectos increíbles que aporten valor y tengan impacto el mundo.</p>
                 <a href="#portfolio">Ir a Portafolio</a>
@@ -60,15 +70,17 @@
         <!-- ABOUT ME SECTION -->
         
         <section id="aboutme">
-            <div class="picture-container">
-                <img src="./assets/images/foto1.jpg" alt="">
-            </div>
-            <div class="aboutme">
-                <p class="section-title">Sobre Mi</p>
-                <h2>Hola, soy <span>Daniel</span></h2>
-                <h3>Desarrolador web</h3>
-                <p>¡Jamás es demasiado tarde para hacer lo que amas! En mi encontrarás un gran aliado dentro de tu equipo de trabajo, no dudes en ponerte en contacto conmigo si te interesa que colaboremos juntos. Debajo encontrarás más acerca de mis conocimientos y habilidades.</p>
-                <a href="#">Descargar CV</a>
+            <div class="aboutme-container">
+                <div class="picture-container">
+                    <img src="./assets/images/foto1.jpg" alt="">
+                </div>
+                <div class="aboutme">
+                    <p class="section-title">Sobre Mi</p>
+                    <h2>Hola, soy <span>Daniel</span></h2>
+                    <h3>Desarrolador web</h3>
+                    <p>¡Jamás es demasiado tarde para hacer lo que amas! En mi encontrarás un gran aliado dentro de tu equipo de trabajo, no dudes en ponerte en contacto conmigo si te interesa que colaboremos juntos. Debajo encontrarás más acerca de mis conocimientos y habilidades.</p>
+                    <a href="#">Descargar CV</a>
+                </div>
             </div>
         </section>
     
@@ -76,7 +88,7 @@
     
         <section id="skills">
             <div class="skills-container">
-                <h3>HABILIDADES</h3>
+                <h3 class="skills-title">HABILIDADES</h3>
                 
                 <div class="skill">
                     <div class="info">
