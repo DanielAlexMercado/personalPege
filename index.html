@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 992px)">
     
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +36,10 @@
                         <a href="https://github.com/DanielAlexMercado" target="blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/mercadodanielalejandro/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <button class="toggle">
+                    <button class="toggle" aria-label="Abrir menú">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <ul class="nav-menu">
+                    <ul class="nav-menu nav-menu_visible">
                         <li class="nav-menu-item"><a href="#home" class="nav-menu-link nav-link">INICIO</a></li>
                         <li class="nav-menu-item"><a href="#aboutme" class="nav-menu-link nav-link">SOBRE MI</a></li>
                         <li class="nav-menu-item"><a href="#skills" class="nav-menu-link nav-link">HABILIDADES</a></li>
@@ -146,7 +146,7 @@
     
         <section id="portfolio">
             <h3 class="title-section">MIS PROYECTOS</h3>
-            <div class="row">
+            <div class="projects-container">
                 <div class="project">
                     <div class="overlay"></div>
                     <img src="/assets/images/img-mobileFirst.png" alt="proyecto 1">
@@ -231,5 +231,6 @@
             <a href="https://www.linkedin.com/in/mercadodanielalejandro/" target="blank"><span class="linkedin"></span></a>
         </div>
     </footer>
+    <script src="/js/index.js"></script>
 </body>
 </html>
