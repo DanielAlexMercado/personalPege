@@ -39,7 +39,7 @@
     transition: 0.5s;
     color: var(--principal-blue);
 }
-.header .nav .toggle{
+.header .nav .nav-toggle{
     display: none;
     width: 20%;
     color: var(--white);
