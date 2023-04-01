@@ -49,3 +49,15 @@
     padding: 0 5px;
     line-height: 10px;
 }
+
+/* CONTACT SECTON */
+
+#contact .form-container .middle-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact .form-container .middle-row input{
+    width: 49%;
+    margin-bottom: 20px;
+}

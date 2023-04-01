@@ -1,0 +1,11 @@
+/* CONTACT SECTION */
+
+#contact .form-container .middle-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact .form-container .middle-row input{
+    width: 49%;
+    margin-bottom: 20px;
+}

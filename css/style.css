@@ -89,7 +89,7 @@ html{
     width: 100%;
     height: calc(100% - 60px);
     overflow-y: auto;
-    background-color: rgba(44, 62, 80, 0.80);
+    background-color: rgba(44, 62, 80, 0.99);
     list-style: none;
 
     left: 100%;
@@ -220,7 +220,7 @@ main{
     height: 480px;
     max-width: 400px;
     margin: 30px;
-    background-color: #0d0d5f;
+    /* background-color: #0d0d5f; */
 }
 .aboutme-container .picture-container img{
     padding: 20px;
@@ -501,7 +501,8 @@ main{
 }
 #contact .form-container .middle-row{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 #contact .form-container .row{
     margin-bottom: 20px;
@@ -512,9 +513,10 @@ main{
     border-radius: 20px;
     border: none;
     border: 1px solid var(--clear-gray);
+    font-family: "Poppins", sans-serif;
 }
 #contact .form-container .middle-row input{
-    width: 48%;
+    width: 100%;
     margin-bottom: 20px;
 }
 #contact .form-container .full-input{
