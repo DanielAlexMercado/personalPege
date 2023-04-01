@@ -143,7 +143,7 @@ main{
     padding-top: 100px;
     padding-bottom: 100px;
     color: var(--white);
-    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('fondo-img');
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('/assets/images/fondo-inicio.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -217,7 +217,7 @@ main{
 }
 .aboutme-container .picture-container{
     width: 270px;
-    height: 480px;
+    height: 370px;
     max-width: 400px;
     margin: 30px;
     /* background-color: #0d0d5f; */
